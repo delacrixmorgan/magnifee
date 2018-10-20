@@ -1,7 +1,7 @@
 package com.delacrixmorgan.zerocost.form
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 
 /**
  * com.delacrixmorgan.zerocost.form
