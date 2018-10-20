@@ -5,7 +5,8 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import kotlinx.android.synthetic.main.fragment_form_details.*
+import com.delacrixmorgan.zerocost.R
+import kotlinx.android.synthetic.main.fragment_form_pdf.*
 
 /**
  * com.delacrixmorgan.zerocost.form
@@ -15,16 +16,14 @@ import kotlinx.android.synthetic.main.fragment_form_details.*
  * Copyright (c) 2018 Apptivity Lab. All Rights Reserved.
  */
 
-class FormDetailsFragment : Fragment() {
+class FormPdfFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return super.onCreateView(inflater, container, savedInstanceState)
+        return inflater.inflate(R.layout.fragment_form_pdf, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        this.submitButton.setOnClickListener {
-            
-        }
+
     }
 }

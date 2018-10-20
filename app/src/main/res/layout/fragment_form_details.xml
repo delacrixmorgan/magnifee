@@ -8,7 +8,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="First Name">
+            android:hint="Title">
 
         <android.support.design.widget.TextInputEditText
                 android:layout_width="match_parent"
@@ -16,23 +16,7 @@
                 android:imeOptions="actionNext"
                 android:inputType="text|textCapWords|textPersonName"
                 android:maxLines="1"
-                android:paddingStart="46dp"
-                android:textColor="@android:color/white"/>
-    </android.support.design.widget.TextInputLayout>
-
-
-    <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="First Name">
-
-        <android.support.design.widget.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionNext"
-                android:inputType="text|textCapWords|textPersonName"
-                android:maxLines="1"
+                android:text="Mr."
                 android:paddingStart="46dp"
                 android:textColor="@android:color/white"/>
     </android.support.design.widget.TextInputLayout>
@@ -49,9 +33,49 @@
                 android:imeOptions="actionNext"
                 android:inputType="text|textCapWords|textPersonName"
                 android:maxLines="1"
+                android:text="Aaron"
                 android:paddingStart="46dp"
                 android:textColor="@android:color/white"/>
     </android.support.design.widget.TextInputLayout>
 
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Last Name">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapWords|textPersonName"
+                android:maxLines="1"
+                android:text="Ong"
+                android:paddingStart="46dp"
+                android:textColor="@android:color/white"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Address">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text|textCapWords|textPersonName"
+                android:maxLines="1"
+                android:text="Kuala Lumpur"
+                android:paddingStart="46dp"
+                android:textColor="@android:color/white"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:text="Generate Template"
+            android:layout_height="wrap_content"/>
 
 </LinearLayout>
