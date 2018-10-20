@@ -14,12 +14,20 @@
         android:textColor="@color/colorAccent"
         android:textStyle="bold"/>
 
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:text="Is there any bank loans?"
+        android:textAppearance="@style/Subhead"/>
+
     <com.google.android.material.textfield.TextInputLayout
         style="@style/AppTheme.OutlineTextInputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Title">
+        android:hint="Bank Name">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -27,56 +35,9 @@
             android:imeOptions="actionNext"
             android:inputType="text|textCapWords|textPersonName"
             android:maxLines="1"
-            android:text="Ms."/>
+            android:text="Public Bank"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/AppTheme.OutlineTextInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="First Name">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:inputType="text|textCapWords|textPersonName"
-            android:maxLines="1"
-            android:text="Aerith"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/AppTheme.OutlineTextInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Last Name">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:inputType="text|textCapWords|textPersonName"
-            android:maxLines="1"
-            android:text="Gainsborough"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/AppTheme.OutlineTextInputLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Address">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:imeOptions="actionNext"
-            android:inputType="text|textCapWords|textPersonName"
-            android:maxLines="1"
-            android:text="2A, Jalan Stesen Sentral 2, Kuala Lumpur"/>
-    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/submitButton"
