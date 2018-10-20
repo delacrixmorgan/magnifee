@@ -1,81 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Personal Details"
+        android:textAppearance="@style/Title1"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
 
     <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Title">
+        style="@style/AppTheme.OutlineTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Title">
 
         <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionNext"
-                android:inputType="text|textCapWords|textPersonName"
-                android:maxLines="1"
-                android:text="Mr."
-                android:paddingStart="46dp"
-                android:textColor="@android:color/white"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords|textPersonName"
+            android:maxLines="1"
+            android:text="Ms."/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="First Name">
+        style="@style/AppTheme.OutlineTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="First Name">
 
         <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionNext"
-                android:inputType="text|textCapWords|textPersonName"
-                android:maxLines="1"
-                android:text="Aaron"
-                android:paddingStart="46dp"
-                android:textColor="@android:color/white"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords|textPersonName"
+            android:maxLines="1"
+            android:text="Aerith"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Last Name">
+        style="@style/AppTheme.OutlineTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Last Name">
 
         <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionNext"
-                android:inputType="text|textCapWords|textPersonName"
-                android:maxLines="1"
-                android:text="Ong"
-                android:paddingStart="46dp"
-                android:textColor="@android:color/white"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords|textPersonName"
+            android:maxLines="1"
+            android:text="Gainsborough"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:hint="Address">
+        style="@style/AppTheme.OutlineTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Address">
 
         <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionNext"
-                android:inputType="text|textCapWords|textPersonName"
-                android:maxLines="1"
-                android:text="Kuala Lumpur"
-                android:paddingStart="46dp"
-                android:textColor="@android:color/white"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords|textPersonName"
+            android:maxLines="1"
+            android:text="2A, Jalan Stesen Sentral 2, Kuala Lumpur"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-            android:id="@+id/submitButton"
-            android:layout_width="match_parent"
-            android:text="Generate Template"
-            android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_rounded_accent"
+        android:gravity="center"
+        android:padding="18dp"
+        android:text="Generate Template"
+        android:textAllCaps="true"
+        android:textAppearance="@style/Subhead"
+        android:textColor="@android:color/white"/>
 
 </LinearLayout>

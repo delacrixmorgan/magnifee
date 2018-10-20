@@ -1,9 +1,10 @@
 package com.delacrixmorgan.zerocost.template
 
 import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import android.util.AttributeSet
-import android.view.View
+import com.delacrixmorgan.zerocost.R
 
 /**
  * com.delacrixmorgan.zerocost.template
@@ -14,7 +15,12 @@ import android.view.View
  */
 
 class TemplateActivity : AppCompatActivity() {
-    override fun onCreateView(name: String?, context: Context?, attrs: AttributeSet?): View? {
-        return super.onCreateView(name, context, attrs)
+    companion object {
+        fun newLaunchIntent(context: Context) = Intent(context, TemplateActivity::class.java)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_template)
     }
 }
