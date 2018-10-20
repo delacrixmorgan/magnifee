@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.delacrixmorgan.zerocost.R
+import kotlinx.android.synthetic.main.activity_template.*
 
 /**
  * com.delacrixmorgan.zerocost.template
@@ -16,11 +17,15 @@ import com.delacrixmorgan.zerocost.R
 
 class TemplateActivity : AppCompatActivity() {
     companion object {
+        const val FALLBACK_LINK = "http://docs.google.com/gview?embedded=true&url=http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20169.pdf"
         fun newLaunchIntent(context: Context) = Intent(context, TemplateActivity::class.java)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_template)
+
+        this.webView.settings.javaScriptEnabled = true
+        this.webView.loadUrl(FALLBACK_LINK)
     }
 }
