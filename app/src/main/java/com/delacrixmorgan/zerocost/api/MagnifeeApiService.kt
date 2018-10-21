@@ -3,6 +3,8 @@ package com.delacrixmorgan.zerocost.api
 import android.content.Context
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.http.Field
+import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST
 
 /**
@@ -15,7 +17,7 @@ import retrofit2.http.POST
 
 interface MagnifeeApiService {
     companion object {
-        const val BASE_URL = "http://192.168.100.86:8080/"
+        const val BASE_URL = "https://emiror.serveo.net/"
 
         fun create(context: Context): MagnifeeApiService {
             val retrofit = Retrofit.Builder()
@@ -27,8 +29,14 @@ interface MagnifeeApiService {
         }
     }
 
+    @FormUrlEncoded
     @POST("gen")
-    fun getGeneratedPdf() {
+    fun getGeneratedPdf(
+        @Field("buyerFullname") fullName: String = "Aerith",
+        @Field("buyerNric") nric: String = "920215-10-9855",
+        @Field("buyerAddress") address: String = "2A, Jalan Stesen Sentral 2, Kuala Lumpur",
+        @Field("buyerIncomeTax") incomeTax: String = "1234567890"
+    ) {
 
     }
 }
