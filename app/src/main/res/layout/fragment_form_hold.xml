@@ -35,7 +35,7 @@
         <androidx.appcompat.widget.AppCompatRadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Listhold"/>
+            android:text="Leasehold"/>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/AppTheme.OutlineTextInputLayout"

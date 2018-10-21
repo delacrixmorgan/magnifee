@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.delacrixmorgan.zerocost">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,7 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".form.FormActivity">
+        <activity android:name=".NavigationActivity"/>
+        <activity
+            android:name=".form.FormActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
 
@@ -32,9 +39,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".template.TemplateActivity"/>
-        <activity android:name=".profile.ProfileActivity"/>
-        <activity android:name=".NavigationActivity"/>
-    </application>
+        <activity android:name=".template.TemplateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
 
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="template"
+                    android:scheme="magnifee"/>
+            </intent-filter>
+        </activity>
+    </application>
 </manifest>

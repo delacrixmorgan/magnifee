@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_template.*
 
 class TemplateActivity : AppCompatActivity() {
     companion object {
-        const val FALLBACK_LINK = "http://docs.google.com/gview?embedded=true&url=http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20169.pdf"
+        const val FALLBACK_LINK = "http://docs.google.com/gview?embedded=true&url=https://www.hba.org.my/laws/housing_reg/2002/Schedule_G.pdf"
         fun newLaunchIntent(context: Context) = Intent(context, TemplateActivity::class.java)
     }
 
@@ -25,7 +25,6 @@ class TemplateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_template)
 
-        this.webView.settings.javaScriptEnabled = true
         this.webView.loadUrl(FALLBACK_LINK)
     }
 }

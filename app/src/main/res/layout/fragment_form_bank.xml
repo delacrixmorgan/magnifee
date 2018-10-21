@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:checked="true"
-        android:text="Is there any bank loans?"
+        android:text="Is there any bank loans tied to this property at the moment?"
         android:textAppearance="@style/Subhead"/>
 
     <com.google.android.material.textfield.TextInputLayout
